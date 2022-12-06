@@ -1,2 +1,15 @@
+@import "./utils/mixins";
+@import "./utils/variables";
 
+@import "./base/base";
+@import "./base/reset";
+
+@import "./components/btn";
+
+@import "./layouts/customer-say";
+@import "./layouts/favorites";
+@import "./layouts/footer";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/offerings";
 
