@@ -1,24 +1,68 @@
-.favorites {
+.favorites__container {
   @include section;
+
+  @include tablet {
+    padding: 100px 0;
+  }
 }
 
 .favorites__title {
   color: $black;
   font-size: 28px;
   text-align: center;
-  width: 280px;
   margin-bottom: 20px;
+  @include tablet {
+    font-size: 42px;
+  }
 }
 
-.favorites__description {
+.favorites__text {
   font-size: 14px;
   text-align: center;
-  width: 280px;
   color: $black;
+  margin-bottom: 60px;
+  @include tablet {
+    font-size: 16px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
-.test {
+.favorites__list {
+  margin-bottom: 32px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 0;
+  }
+}
+
+.favorites__item {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 32px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 64px) / 3);
+  }
+}
+
+.favorites__item {
   background: #fefefe;
   border: 11px solid #ffe550;
   border-radius: 139.658px;
+  @include tablet {
+    border-radius: 167.59px;
+  }
+  @include desktop {
+    border-radius: 197.5px;
+  }
+}
+
+.favorites__item:hover,
+.favorites__item:focus {
+  border-color: $dark-green;
 }
