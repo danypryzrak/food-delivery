@@ -21,10 +21,7 @@
         width: 458px;
         
     }
-
 }
-
-
 
 
 .Backdrop.is-hidden .Modal {
@@ -35,11 +32,22 @@
 .ModalButton {
     position: absolute;
     display: flex;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
    
     cursor: pointer;
 
-    transition-duration: var(--time-function);
-    transition-timing-function: var(--bezier-functiion);
+}
+
+.ModalForm__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;    
+    color: #2C2C2C;
 }
 
 .ModalForm__button{
