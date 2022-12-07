@@ -31,11 +31,16 @@
     background-color: #BBF330;
     border-radius: 30px;
     border: transparent;
+    cursor: pointer;
 
     font-weight: 500;
     font-size: 13px;
     line-height: 150%;
 
     color: #2C2C2C;
+    
+    &:hover{
+        background-color: #FFE450 ;
+    }
 }
 
