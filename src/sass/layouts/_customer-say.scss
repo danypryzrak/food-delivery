@@ -8,6 +8,13 @@
      background-image: url(../images/vlad/bkgrгd-img-customers480@2x.jpg);
     }
 
+    @include mobile {
+        background-image: url(../images/vlad/bkgrгd-img-customers480@1x.jpg);
+        @include retina-bgi {
+         background-image: url(../images/vlad/bkgrгd-img-customers480@2x.jpg);
+        }
+    }
+
 }
 
 .container-customer-say {
@@ -15,9 +22,9 @@
     flex-direction: column;
 }
 
-.customer-sayclass__title {
+.customer-say__title {
     font-size: 28px;
-line-height: calc(33 / 28);
+line-height: calc(33/28);
 color: $black;
 text-align: center;
 margin-bottom: 20px;
@@ -25,7 +32,7 @@ margin-bottom: 20px;
 
 .customer-say__subtitle {
     font-size: 14px;
-line-height: calc (16 / 14);
+line-height: calc (16/14);
 text-align: center;
     margin-bottom: 32px;
 }
@@ -37,15 +44,11 @@ text-align: center;
 
 }
 
-
-
 .reviews-item {
     padding: 8px;
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 0px 30px 30px 30px;
-    
-
 }
 
 .reviews-list__icon {
@@ -53,9 +56,48 @@ text-align: center;
     margin-bottom: 28px;
 }
 
-
-
-
 .reviews-list__wrapper-comment{
+    
     margin-bottom: 40px;
+
+}
+.reviews-list__wrapper-user {
+
+display: flex;
+align-items: center;
+gap: 16px;
+}
+.reviews-list__user-photo {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.reviews-list__wrapper-user-name {
+    position: relative;
+    padding-right: 13px;
+}
+
+.reviews-list__title-user-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+color: $black;
+}
+
+.reviews-list__title-user-name::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $dark-green;
+    
+}
+
+
+.reviews-list__subtitle-user {
+    font-size: 14px;
+    line-height: 150%;
+    color: $black;
 }
