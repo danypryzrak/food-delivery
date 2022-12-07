@@ -1,0 +1,19 @@
+.footer{
+background-image: url(../../images/serhii/footer-bck-480@1x.png);
+@include retina-bgi{
+    background-image: url(../../images/serhii/footer-bck-480@2x.png);
+}
+
+@include mobile{
+    background-image: url(../../images/serhii/footer-bck-720@1x.png);
+
+    @include retina-bgi{
+        background-image: url(../../images/serhii/footer-bck-720@2x.png);
+    }
+}
+
+@include tablet{
+    background-image: url(../../images/serhii/footer-bck-1200@1x.png);
+    
+}
+}
