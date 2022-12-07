@@ -1,3 +1,24 @@
+.favorites {
+  @include section;
+}
+
+.favorites__title {
+  color: $black;
+  font-size: 28px;
+  text-align: center;
+  width: 280px;
+  margin-bottom: 20px;
+}
+
+.favorites__description {
+  font-size: 14px;
+  text-align: center;
+  width: 280px;
+  color: $black;
+}
+
 .test {
-  color: red;
+  background: #fefefe;
+  border: 11px solid #ffe550;
+  border-radius: 139.658px;
 }
