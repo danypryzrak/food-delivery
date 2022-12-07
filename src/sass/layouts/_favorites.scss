@@ -57,6 +57,9 @@
   padding: 18px 18px;
   border: 11px solid #ffe550;
   border-radius: 50%;
+  &:active {
+    border-color: $dark-green;
+  }
 
   @include tablet {
     padding: 24px 24px;
