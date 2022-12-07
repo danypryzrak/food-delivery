@@ -1,10 +1,11 @@
 .footer{
     max-width: 1280px;
-    margin: 0 auto;
     background-position: center;
-    
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/serhii/footer-bck-480@1x.png);
+
+    @include section;
 
 @include retina-bgi{
     background-image: url(../images/serhii/footer-bck-480@2x.png);
@@ -27,25 +28,53 @@
 }
 }
 
-.footer__box{
-    display: flex;
+.footer__container{
+align-items: center;
 }
 
-.footer__icon{
-    margin-right: 81px;
+.footer__box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
 }
 
 .footer-nav{
     display: flex;
+    gap: 81px;
+}
+
+
+.footer-nav__list{
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include tablet{
+        flex-direction: row;
+        gap: 28px;
+    }
 } 
 
+
+.footer-nav__item:not(:last-child){
+margin-bottom: 20px;
+
+    @include tablet{
+        margin-bottom: 0;
+    }
+}
+
+    
+
+
 .footer-nav__link{
+    display: block;
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
-line-height: 16px;
+line-height: calc(16/14);
 
 color: $black;
 }
@@ -53,15 +82,100 @@ color: $black;
 .subscribe{
     display: flex;
     flex-direction: column;
+
+    @include tablet{
+        
+    }
 }
 
 .subscribe__title{
-    font-family: 'Roboto';
-font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: calc(21/14);
 color: $black;
 
 margin-bottom: 12px;
+
+@include tablet{
+
+    }
+}
+
+.subscribe__input{
+    border: 0.854167px solid #FFE550;
+border-radius: 30px;
+height: 42px;
+width: 280px;
+padding:0 12px;
+margin-bottom: 20px;
+
+&::-webkit-input-placeholder{
+    color:#505050;
+    font-size: 12px;
+    line-height: calc(18/12);
+}
+}
+
+.subscribe__btn{
+width: 103px;
+height: 42px;
+
+align-self: flex-end;
+margin-bottom: 20px;
+
+background: #FFFFFF;
+border: 0.854167px solid #7EB101;
+border-radius: 30px;
+
+font-weight: 500;
+font-size: 13px;
+line-height: calc(20/13);
+
+color: $black;
+}
+
+.subscribe__text{
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: $black;
+}
+
+.subscribe__privacy{
+    color: $dark-green;
+    text-decoration: underline;
+}
+
+.extra{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.extra__list{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.extra__link{
+    font-weight: 400;
+font-size: 10px;
+line-height: calc(12/10);
+
+text-decoration-line: underline;
+
+color: $dark-green;
+}
+
+.extra__copy{
+font-weight: 400;
+font-size: 10px;
+line-height: calc(12/10);
+text-align: center;
+
+color: $black;
 }
