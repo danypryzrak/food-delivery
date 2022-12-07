@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>FoodSta</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="icon" href="./images/fav-icon.png" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
-  <title>FoodSta</title>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <link rel="icon" href="./images/fav-icon.png">
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
 
-<body>
-  <!-- Header -->
-  <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
 
-  <main>
-    <include src="./partials/hero.html"></include>
+      <include srs="./partials/offering"></include>
 
-    <include srs="./partials/offering"></include>
+      <include src="./partials/favorites.html"></include>
 
-    <include src="./partials/favorites.html"></include>
+      <include src="./partials/customer-say.html"></include>
 
-    <include src="./partials/customer-say.html"></include>
+      <!--  -->
 
-    <!--  -->
-
-    <include src="./partials/footer.html"></include>
-
-  </main>
-
-</body>
-
+      <include src="./partials/footer.html"></include>
+    </main>
+    <include src="./partials/backdrop.html"></include>
+    <script src="../js/modal.js"></script>
+  </body>
 </html>
