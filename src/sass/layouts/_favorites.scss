@@ -57,17 +57,16 @@
   padding: 18px 18px;
   border: 11px solid #ffe550;
   border-radius: 50%;
-  &:hover,
-  &:focus {
-    @include desktop {
-      border-color: $dark-green;
-    }
-  }
+
   @include tablet {
     padding: 24px 24px;
   }
   @include desktop {
     padding: 30px 30px;
+    &:hover,
+    &:focus {
+      border-color: $dark-green;
+    }
   }
 }
 
