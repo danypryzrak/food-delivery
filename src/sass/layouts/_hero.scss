@@ -17,6 +17,37 @@
 .HeroButton{
     width: 98px;
     height: 32px;
-    background-color: red;
+
+    background-color: #BBF330;
     border-radius: 30px;
+    border: transparent;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+
+    color: #2C2C2C;
+}
+
+.OfferingsList__icon{
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: red ;
+}
+.OfferingsButtonList{
+    display: flex;    
+}
+
+.OfferingsButtonList__button{
+    width: 106px;
+    height: 40px;
+    
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+    background-color: red ;
 }
