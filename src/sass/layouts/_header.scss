@@ -1,36 +1,43 @@
 .header-page {
-    padding: 0 32px;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 6px 4px -4px rgba(105, 105, 105, 0.1);
 }
 
 
-.main-nav {
-    height: 72px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include tablet {
-        width: 100%;
-        padding: 0;
-        // justify-content: space-between;
-    }
-
-    @include desktop {
-
-    }
-}
 .nav {
+    display: flex;
+justify-content: space-between;
+align-items: center;
+    max-width: 100%;
+    padding: 10px 20px;
+    margin: 0 auto;
+
+    @include mobile{
+    width: 480px;
+    }
+    
+    @include tablet {
+    width: 768px;
+    padding: 10px 32px;
+    }
+        
+    @include desktop {
+    width: 1280px;
+    padding: 10px 16px;
+    }
+
+}
+.nav__list {
     display: none;
 
     @include tablet {
     display: flex;
-    margin-left: 735px;
+    margin-left: 191px;
     gap: 28px;
     }
     @include desktop {
-    margin-left: 191px;
+    margin-left: 735px;
     }
 
 }
@@ -48,10 +55,12 @@
     &:hover,
     &:focus {
     color: #BBF330;
+    text-decoration: underline;
     }
 }
 .nav__link--current {
     color: #BBF330;
+    text-decoration: underline;
 }
 .burger-btn {
     width: 40px;
@@ -62,7 +71,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 22px;
 
     @include tablet {
         display: none;
@@ -113,7 +121,7 @@
 }
 .menu-nav {
     position: absolute;
-    right: 53px;
+    right: 35px;
     top: 72px;
     z-index: 999;
     transform: scale(1.1);
