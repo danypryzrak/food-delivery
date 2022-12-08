@@ -109,7 +109,7 @@ color: $black;
 
 }
 
-.subscribe{
+.footer-subscribe{
     display: flex;
     flex-direction: column;
     width: 400px;
@@ -124,7 +124,7 @@ color: $black;
     }
 }
 
-.subscribe__title{
+.footer-subscribe__title{
 font-weight: 500;
 font-size: 14px;
 line-height: calc(21/14);
@@ -137,7 +137,7 @@ width: 100%;
     }
 }
 
-.subscribe__input{
+.footer-subscribe__input{
     border: 0.854167px solid #FFE550;
 border-radius: 30px;
 height: 42px;
@@ -167,7 +167,7 @@ margin-bottom: 12px;
     }
 }
 
-.subscribe__btn{
+.footer-subscribe__btn{
 width: 103px;
 height: 42px;
 
@@ -196,7 +196,7 @@ margin-bottom: 12px;
 }
 }
 
-.subscribe__text{
+.footer-subscribe__text{
 font-weight: 400;
 font-size: 10px;
 line-height: 12px;
@@ -204,7 +204,7 @@ line-height: 12px;
 color: $black;
 }
 
-.subscribe__privacy{
+.footer-subscribe__privacy{
     color: $dark-green;
     text-decoration: underline;
 }
