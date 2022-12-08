@@ -1,6 +1,6 @@
 .header-page {
     // padding: 0 32px;
-    // width: 100%;
+    width: 100%;
     background-color: #fff;
     box-shadow: 0 6px 4px -4px rgba(105, 105, 105, 0.1);
 }
@@ -14,6 +14,7 @@
     @include tablet {
         width: 100%;
         padding: 0;
+        // justify-content: space-between;
     }
 
     @include desktop {
@@ -25,15 +26,13 @@
 
     @include tablet {
     display: flex;
-    
+    margin-left: 735px;
     gap: 28px;
+    }
+    @include desktop {
+    margin-left: 191px;
     }
 
-    @include desktop {
-   
-    display: flex;
-    gap: 28px;
-    }
 }
 .nav__link {
     font-family: 'Roboto';
@@ -89,7 +88,7 @@
     display: flex;
     background-color: #BBF330;
     border-radius: 30px;
-    // margin-left: auto;
+    margin-left: 30px;
     height: 32px;
     width: 98px;
     border: none;
@@ -114,8 +113,8 @@
 }
 .menu-nav {
     position: absolute;
-    right: 0%;
-    top: 6%;
+    right: 53px;
+    top: 72px;
     z-index: 999;
     transform: scale(1.1);
     transition: transform 250ms ease-in-out;
