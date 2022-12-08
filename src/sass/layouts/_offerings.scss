@@ -1,7 +1,28 @@
 .Offerings{
-    background-color: #FFE550;
+
+    position: relative;
 
     padding-bottom: 60px;
+    background-image: url(../images/max/Rectangle-320@1x.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding-top: 381px;
+}
+
+.Offerings::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/max/Apple@1x.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 280px;
+    height: 320px;
+    top: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
 }
 
 .OfferingsTitle{
