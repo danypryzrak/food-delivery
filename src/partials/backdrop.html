@@ -1,0 +1,48 @@
+<div class="Backdrop is-hidden" data-modal>
+  <div class="Modal">
+    <button class="ModalButton" type="button" data-modal-close>
+      <svg class="ModalButton__icon" width="11" height="11">
+        <use href="./images/max/svg/symbol-defs.svg#modal-close-icon"></use>
+      </svg>
+    </button>
+    <form class="ModalForm">
+      <p class="ModalForm__title">Order Form</p>
+
+      <label class="ModalForm__subtitle" for="user_name">Name</label>
+      <input
+        class="ModalForm__inpyt"
+        name="user_name"
+        required
+        placeholder="Your name"
+        pattern="^[a-zA-Zа-яА-ЯїЇіІ]+$"
+        title="Тільки літери А-Я або A-Z"
+        type="text"
+        id="user_name"
+      />
+      <p class="error">dvsdvsdvdsv</p>
+
+      <label class="ModalForm__subtitle" for="user_tell">Phone number</label>
+      <input
+        class="ModalForm__inpyt"
+        name="user_tell"
+        required
+        title="Тільки цифри"
+        pattern="^[0-9]+$"
+        placeholder="+38(0_ _) _ _ _   _ _   _ _"
+        type="tel"
+        id="user_tell"
+      />
+
+      <label class="ModalForm__subtitle" for="user_email">E-mail</label>
+      <input
+        class="ModalForm__inpyt"
+        name="user_email"
+        required
+        placeholder="example@gmail.com"
+        type="email"
+        id="user_email"
+      />
+      <button class="ModalForm__button" type="submit">Send</button>
+    </form>
+  </div>
+</div>
