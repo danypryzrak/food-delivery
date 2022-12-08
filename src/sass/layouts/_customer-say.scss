@@ -119,11 +119,10 @@ gap: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-color: $black;
-
+    color: $black;
 }
 
-.reviews-list__title-user-name::after{
+.reviews-list__wrapper-border::after{
     position: absolute;
     content: "";
     top: 0;
@@ -131,7 +130,6 @@ color: $black;
     width: 1px;
     height: 100%;
     background-color: $dark-green;
-    
 }
 
 .reviews-list__subtitle-user {
@@ -251,7 +249,6 @@ color: $black;
     @include tablet {
         max-width: 394px;
     }
-    
 }
 
 
@@ -264,5 +261,5 @@ line-height: 150%;
 border-radius: 30px;
 border: none;
 color: $black;
-background-color: $dark-green;
+background-color: $green;
 }
