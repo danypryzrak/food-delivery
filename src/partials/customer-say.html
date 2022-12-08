@@ -53,3 +53,47 @@
     </ul>
   </div>
 </section>
+<!--------------------- subscribe  ------------------------>
+<section class="subscribe">
+  <div class="container container__subscribe">
+    <picture>
+      <source
+        srcset="
+          ./images/vlad/subscribe_img1280@1x.png 1x,
+          ./images/vlad/subscribe_img1280@2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+
+      <source
+        srcset="./images/vlad/subscribe_img768@1x.png 1x, ./images/vlad/subscribe_img768@1x.png 2x"
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="./images/vlad/subscribe_img480@1x.png, ./images/vlad/subscribe_img480@1x.png 2x"
+      />
+
+      <img
+        class="subscribe__photo"
+        src="./images/vlad/subscribe_img480@1x.png"
+        alt="photo banana"
+      />
+    </picture>
+
+    <h2 class="subscribe__title">Subscribe To Get Special Offers</h2>
+    <p class="subscribe__subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+      elementum tristique.
+    </p>
+    <form class="subscription__form">
+      <input
+        type="email"
+        name="subscribe"
+        class="form-subscription__input"
+        placeholder="Enter your emai"
+      />
+      <button class="form-subscription__btn" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>

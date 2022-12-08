@@ -1,21 +1,33 @@
 .customer-say {
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: bottom;
+    background-size: cover;
     @include section;
+
     background-image: url(../images/vlad/bkgrгd-img-customers480@1x.jpg);
     @include retina-bgi {
      background-image: url(../images/vlad/bkgrгd-img-customers480@2x.jpg);
     }
 
-    @include mobile {
-        background-image: url(../images/vlad/bkgrгd-img-customers480@1x.jpg);
+    @include tablet {
+        background-image: url(../images/vlad/bkgrгd-img-customers768@1x.jpg);
         @include retina-bgi {
-         background-image: url(../images/vlad/bkgrгd-img-customers480@2x.jpg);
+         background-image: url(../images/vlad/bkgrгd-img-customers768@2x.jpg);
         }
     }
+        @include desktop {
+            background-image: url(../images/vlad/bkgrгd-img-customers1280@1x.jpg);
+            @include retina-bgi {
+             background-image: url(../images/vlad/bkgrгd-img-customers1280@2x.jpg);
+            }
+            padding-bottom: 120px;
+            }
+            @include desktop {
+                padding-bottom: 200px;
+            }
+        }
+    
 
-}
 
 .container-customer-say {
     display: flex;
@@ -23,25 +35,42 @@
 }
 
 .customer-say__title {
-    font-size: 28px;
+font-size: 28px;
 line-height: calc(33/28);
 color: $black;
 text-align: center;
 margin-bottom: 20px;
+@include tablet {
+    font-size: 42px;
+line-height: calc(49/42)
 }
+}
+
 
 .customer-say__subtitle {
     font-size: 14px;
 line-height: calc (16/14);
 text-align: center;
     margin-bottom: 32px;
+    @include tablet{
+        font-size: 16px;
+        line-height: calc(19/16);
+    }
 }
 
 .reviews-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
-
+    @include tablet{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+    @include desktop{
+        gap: 139px;
+        
+    }
 }
 
 .reviews-item {
@@ -49,11 +78,27 @@ text-align: center;
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 0px 30px 30px 30px;
+    @include tablet{
+        width: calc((100% - 1 * 32px) / 2);
+    }
+    @include desktop{
+        width: calc((100% - 1 * 139px) / 2);
+    }
 }
 
 .reviews-list__icon {
     fill: $main-yellow;
     margin-bottom: 28px;
+}
+
+.reviews-list__subtitle {
+    font-weight: 700;
+font-size: 16px;
+line-height: calc(19/16);
+@include tablet{
+font-size: 18px;
+line-height: calc(21/18);
+}
 }
 
 .reviews-list__wrapper-comment{
@@ -62,7 +107,6 @@ text-align: center;
 
 }
 .reviews-list__wrapper-user {
-
 display: flex;
 align-items: center;
 gap: 16px;
@@ -82,6 +126,7 @@ gap: 16px;
     font-size: 14px;
     line-height: 150%;
 color: $black;
+
 }
 
 .reviews-list__title-user-name::after{
@@ -95,20 +140,91 @@ color: $black;
     
 }
 
-
 .reviews-list__subtitle-user {
     font-size: 14px;
     line-height: 150%;
     color: $black;
 }
 
-
-.test {
-    display: flex;
-    align-items: center;
-    width: 100%;
+// ------------------------------------- ! subscribe 
+.subscribe {
     position: relative;
-    top: -39px;
+    top: -43px;
+}
 
+.container__subscribe {
+    padding-bottom: 60px;
+}
+
+.subscribe__photo {
+    max-height: 78px;
+    max-width: 281px;
+    margin-bottom: 17px;
+
+    @include tablet {
+        max-width: 281px;
+        max-height: 136px;
+        margin-bottom: 20px;
+    }
+}
+
+.subscribe__title {
+    font-size: 28px;
+    line-height: 120%;
+    color: $black;
+    margin-bottom: 108px;
+
+    @include tablet {
+        font-size: 42px;
+line-height: 120%;
+margin-bottom: 20px;
+    }
     
+}
+
+.subscribe__subtitle {
+    display: none;
+    @include tablet {
+        font-size: 16px;
+        line-height: 150%;
+        color: $black;
+        margin-bottom: 24px;
+    }
+}
+
+.subscription__form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+    @include tablet {
+        flex-wrap: nowrap;
+        gap: 22px;
+    }
+    
+}
+
+.form-subscription__input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    @include tablet {
+        max-width: 394px;
+    }
+    
+}
+
+
+.form-subscription__btn {
+max-width: 103px;
+padding: 11px 22px;
+font-weight: 500;
+font-size: 13px;
+line-height: 150%;
+border-radius: 30px;
+border: none;
+color: $black;
+background-color: $dark-green;
 }
