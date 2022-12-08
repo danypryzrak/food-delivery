@@ -5,9 +5,10 @@
     modal: document.querySelector("[data-modal]"),
   };
 
-  
-
-  refs.openModalBtn.addEventListener("click", toggleModal);
+  document.querySelectorAll("[data-modal-open]").forEach(item => {
+    console.log("1");
+    item.addEventListener("click", toggleModal)
+  })
   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
