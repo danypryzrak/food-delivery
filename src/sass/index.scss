@@ -1,16 +1,16 @@
-@import "./utils/mixins";
-@import "./utils/variables";
-@import "./utils/visually-hidden";
+@import './utils/common';
+@import './utils/mixins';
+@import './utils/variables';
+@import './utils/visually-hidden';
 
-@import "./base/base";
-@import "./base/reset";
+@import './base/base';
+@import './base/reset';
 
-@import "./components/btn";
+@import './components/btn';
 
-@import "./layouts/customer-say";
-@import "./layouts/favorites";
-@import "./layouts/footer";
-@import "./layouts/header";
-@import "./layouts/hero";
-@import "./layouts/offerings";
-
+@import './layouts/customer-say';
+@import './layouts/favorites';
+@import './layouts/footer';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/offerings';
