@@ -23,6 +23,13 @@
 
     transform: translateX(-50%);
 
+    @media screen and(min-width:768px) {
+        background-image: url(../images/max/Group-768@1x.png);
+        width: 704px;
+        height: 280px;
+        
+    }
+
 }
 
 .OfferingsTitle{
