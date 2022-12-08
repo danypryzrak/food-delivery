@@ -1,7 +1,7 @@
 .customer-say {
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     @include section;
     background-image: url(../images/vlad/bkgrгd-img-customers480@1x.jpg);
     @include retina-bgi {
@@ -74,7 +74,7 @@ gap: 16px;
 
 .reviews-list__wrapper-user-name {
     position: relative;
-    padding-right: 13px;
+    padding-right: 16px;
 }
 
 .reviews-list__title-user-name {
@@ -100,4 +100,15 @@ color: $black;
     font-size: 14px;
     line-height: 150%;
     color: $black;
+}
+
+
+.test {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: -39px;
+
+    
 }
