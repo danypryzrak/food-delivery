@@ -90,11 +90,20 @@ line-height: calc (16/14);
 button.slick-prev {
     z-index: 20;
     left: 0px;
+    @include desktop {
+        z-index: 20;
+        left: 105px;
+    }
 }
+
 
 button.slick-next {
     z-index: 20;
     right: 0px;
+    @include desktop {
+        z-index: 20;
+        right: 105px;
+    }
 }
 
 .reviews-list__icon {
@@ -263,11 +272,27 @@ gap: 16px;
     padding: 11px 12px;
     border: 0.854167px solid #FFE550;
     border-radius: 30px;
+    &::-webkit-form-subscription__input{
+        color:#505050;
+        font-size: 12px;
+        line-height: calc(18/12);
+    }
+    
+    &:valid{
+        border-color: #7EB101;
+    }
+    &:invalid{
+        border-color: #FF705D;
+    }
+    &:placeholder-shown{
+        border-color: #FFE550;
+}
     @include tablet {
         max-width: 394px;
+
+        
     }
 }
-
 
 .form-subscription__btn {
 max-width: 103px;
