@@ -12,20 +12,24 @@
 
 @include tablet{
     padding: 100px 0;
-    background-image: url(../images/serhii/1bk-tablet@1x.png),url(../images/serhii/1bk-tablet@2x.png),url(../images/serhii/1bk-tablet@3x.png),url(../images/serhii/1bk-tablet@4x.png),url(../images/serhii/1bk-tablet@5x.png),url(../images/serhii/1bk-tablet@6x.png),url(../images/serhii/1bk-tablet@7x.png);
-    background-position: center;
-    background-size: 100% 100%;
+    background-image: url(../images/serhii/1bk-tablet@1x.png),url(../images/serhii/2bk-tablet@1x.png),url(../images/serhii/3bk-tablet@1x.png),url(../images/serhii/4bk-tablet@1x.png),url(../images/serhii/5bk-tablet@1x.png),url(../images/serhii/6bk-tablet@1x.png),url(../images/serhii/7bk-tablet@1x.png);
+    background-position: 30% bottom, 80% bottom, left bottom, 43% bottom, 63% bottom, right bottom, right top;
+    background-size: 168px 92px, 171px 141px, 184px 60px, 153px 95px, 221px 82px, 170px 69px, 203px 365px;
 
     @include retina-bgi{
-       background-image: url(../images/serhii/1bk-tablet@1x.png),url(../images/serhii/1bk-tablet@2x.png),url(../images/serhii/1bk-tablet@3x.png),url(../images/serhii/1bk-tablet@4x.png),url(../images/serhii/1bk-tablet@5x.png),url(../images/serhii/1bk-tablet@6x.png),url(../images/serhii/1bk-tablet@7x.png);
+    background-image: url(../images/serhii/1bk-tablet@2x.png),url(../images/serhii/2bk-tablet@2x.png),url(../images/serhii/3bk-tablet@2x.png),url(../images/serhii/4bk-tablet@2x.png),url(../images/serhii/5bk-tablet@2x.png),url(../images/serhii/6bk-tablet@2x.png),url(../images/serhii/7bk-tablet@2x.png);
+    background-size: 168px 92px, 171px 141px, 184px 60px, 153px 95px, 221px 82px, 170px 69px, 203px 365px;
     }
 }
 
 @include desktop{
-    background-image: url(../images/serhii/footer-bck-1200@1x.png);
-    
+    background-image: url(../images/serhii/1bk-desktop@1x.png),url(../images/serhii/2bk-desktop@1x.png),url(../images/serhii/3bk-desktop@1x.png),url(../images/serhii/4bk-desktop@1x.png),url(../images/serhii/5bk-desktop@1x.png),url(../images/serhii/6bk-desktop@1x.png),url(../images/serhii/7bk-desktop@1x.png), url(../images/serhii/8bk-desktop@1x.png);
+    background-position: 15% bottom, 43% bottom, 85% bottom, left bottom, center bottom, 32% bottom, 70% bottom, right bottom;
+    background-size: 178px 98px, 526px 266px, 182px 154px, 195px 60px, 380px 126px, 163px 103px, 235px 87px, 181px 73px;
     @include retina-bgi{
-        background-image: url(../images/serhii/footer-bck-1200@2x.png);
+        background-image: url(../images/serhii/1bk-desktop@2x.png),url(../images/serhii/2bk-desktop@2x.png),url(../images/serhii/3bk-desktop@2x.png),url(../images/serhii/4bk-desktop@2x.png),url(../images/serhii/5bk-desktop@2x.png),url(../images/serhii/6bk-desktop@2x.png),url(../images/serhii/7bk-desktop@2x.png), url(../images/serhii/8bk-desktop@2x.png);
+    background-size: 178px 98px, 526px 266px, 182px 154px, 195px 60px, 380px 126px, 163px 103px, 235px 87px, 181px 73px;
+
     }
 }
 }
@@ -168,6 +172,21 @@ margin-bottom: 20px;
 @include tablet{
 margin-bottom: 12px;
     }
+}
+
+.subscribe__error{
+    font-weight: 400;
+font-size: 10px;
+line-height: calc(15/10);
+color: #FF705D;
+display: none;
+align-items: center;
+
+}
+
+.error-icon{
+    fill: #FF705D;
+    margin-right: 4px;
 }
 
 .subscribe__btn{
