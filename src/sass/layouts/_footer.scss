@@ -1,20 +1,23 @@
 .footer{
-    background-position: center;
-    background-size: cover;
+    background-position: 0 132px, right top, 50% 100%;
+    background-size: 110px 116px, 104px 259px, 253px 66px;
     background-repeat: no-repeat;
-    background-image: url(../images/serhii/footer-bck-480@1x.png);
+    background-image: url(../images/serhii/apple-mobile@1x.png), url(../images/serhii/citrus_mobile@1x.png), url(../images/serhii/banana-mobile@1x.png);
     padding: 60px 0;
 
 @include retina-bgi{
-    background-image: url(../images/serhii/footer-bck-480@2x.png);
+    background-image:  url(../images/serhii/apple-mobile@2x.png), url(../images/serhii/citrus_mobile@2x.png), url(../images/serhii/banana-mobile@2x.png);
+    background-size: 110px 116px, 104px 259px, 253px 66px;
 }
 
 @include tablet{
     padding: 100px 0;
-    background-image: url(../images/serhii/footer-bck-720@1x.png);
+    background-image: url(../images/serhii/1bk-tablet@1x.png),url(../images/serhii/1bk-tablet@2x.png),url(../images/serhii/1bk-tablet@3x.png),url(../images/serhii/1bk-tablet@4x.png),url(../images/serhii/1bk-tablet@5x.png),url(../images/serhii/1bk-tablet@6x.png),url(../images/serhii/1bk-tablet@7x.png);
+    background-position: center;
+    background-size: 100% 100%;
 
     @include retina-bgi{
-        background-image: url(../images/serhii/footer-bck-720@2x.png);
+       background-image: url(../images/serhii/1bk-tablet@1x.png),url(../images/serhii/1bk-tablet@2x.png),url(../images/serhii/1bk-tablet@3x.png),url(../images/serhii/1bk-tablet@4x.png),url(../images/serhii/1bk-tablet@5x.png),url(../images/serhii/1bk-tablet@6x.png),url(../images/serhii/1bk-tablet@7x.png);
     }
 }
 
