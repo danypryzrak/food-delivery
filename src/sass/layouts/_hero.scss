@@ -1,17 +1,86 @@
 .Hero{
-   
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+
+    @include desktop{
+        padding-top: 14px;
+        padding-bottom: -175px;
+    }
+
+    
 }
+
+.ContainerHero{
+    position: relative;
+   
+    @media screen and(min-width:1280px) {
+        height: 608px;
+        }
+}
+
+.ContainerHero::after{
+
+    position: absolute;
+    @media screen and(min-width:768px) {
+        
+        content: "";
+        background-image: url(../images/max/Ellipse-tablet@1x.png);
+        height: 320px;
+        width: 320px;
+        
+        top: 200px;
+        right: 40px;
+    }
+
+    @media screen and(min-width:1200px) {
+        background-image: url(../images/max/Ellipse-decstop@1x.png);
+        width: 580px;
+        height: 580px;
+        right: 30px;
+        top: 14px;
+    }
+
+}
+
+.ContainerHero::before{
+    position: absolute;
+    @media screen and(min-width:1200px) {
+            content: " ";
+            background-image: url(../images/max/Plate-decstop@1x.png);
+            width: 528px;
+            height: 528px;
+            top: 40px;
+            right: 56px;
+            z-index: 10;
+            }
+        }
+    
+ 
 
 .HeroTitle{
     margin-bottom: 28px;
 
+    
     font-weight: 700;
     font-size: 28px;
-    line-height: 1.17;
+    line-height: 33px;
     
-    color:#2C2C2C;
+    color: #2C2C2C;
+
+    @media screen and(min-width:768px) {
+        width: 537px;
+        
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 120%;
+    }
+
+    @media screen and(min-width:1280px) {
+        width: 502px;
+    
+        font-size: 48px;
+        }
+    
 }
 
 .HeroSubtitle{
@@ -22,6 +91,14 @@
     line-height: 150%;
     
     color:#2C2C2C;
+
+    @media screen and(min-width:768px) {
+        width: 336px;
+        }
+
+    @media screen and(min-width:1280px){
+        width: 502px;
+    }
 }
 
 .HeroButton{
@@ -44,84 +121,4 @@
     }
 }
 
-.Offerings {
-    
-    padding-bottom: 60px;
-}
 
-.OfferingsTitle {
-    margin-bottom: 28px;
-}
-
-.OfferingsList__icon {
-    width: 26px;
-    height: 26px;
-}
-
-
-.OfferingsButtonList {
-    display: flex;
-}
-
-.OfferingsButtonList__button {
-    width: 106px;
-    height: 40px;
-
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 150%;
-    background-color: white;
-    cursor: pointer;
-
-    border: 2px solid #7EB101;
-    border-radius: 30px;
-
-    &:hover {
-        background-color: #BBF330;
-        border: transparent;
-    }
-}
-
-.OfferingsSubtitle {
-    margin-bottom: 28px;
-}
-
-.OfferingsList__title {
-    margin-bottom: 16px;
-}
-
-.OfferingsList {
-    margin-bottom: 28px;
-
-    @media screen and(min-width:768px) {
-        display: flex;
-    }
-}
-
-.OfferingsList__item {
-    margin-top: 28px;
-
-    @media screen and(min-width:768px) {
-        display: block;
-        margin-right: 67px;
-        width: 252px;
-    }
-}
-
-.test {
-    background-color: transparent;
-    border: transparent;
-}
-
-.OfferingsList__bcg {
-    margin-top: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-
-    border-radius: 50%;
-    background-color: white;
-}
