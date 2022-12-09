@@ -52,20 +52,19 @@ line-height: calc (16/14);
     }
 }
 
-.reviews-list {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    @include tablet{
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 32px;
-    }
-    @include desktop{
-        gap: 139px;
-        
-    }
-}
+// .reviews-list {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 24px;
+//     @include tablet{
+//         flex-direction: row;
+//         flex-wrap: nowrap;
+//         gap: 32px;
+//     }
+//     @include desktop{
+//         gap: 139px;
+//     }
+// }
 
 .reviews-item {
     padding: 8px;
@@ -78,11 +77,29 @@ line-height: calc (16/14);
     @include desktop{
         width: calc((100% - 1 * 139px) / 2);
     }
+
+    margin: 24px;
+    @include tablet{
+        margin: 32px;
+    }
+    @include desktop{
+        margin: 139px;
+    }
+}
+
+button.slick-prev {
+    z-index: 20;
+    left: 0px;
+}
+
+button.slick-next {
+    z-index: 20;
+    right: 0px;
 }
 
 .reviews-list__icon {
     fill: $main-yellow;
-    margin-bottom: 28px;
+    margin: 28px;
 }
 
 .reviews-list__subtitle {
@@ -119,11 +136,10 @@ gap: 16px;
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
-color: $black;
-
+    color: $black;
 }
 
-.reviews-list__title-user-name::after{
+.reviews-list__wrapper-border::after{
     position: absolute;
     content: "";
     top: 0;
@@ -131,7 +147,6 @@ color: $black;
     width: 1px;
     height: 100%;
     background-color: $dark-green;
-    
 }
 
 .reviews-list__subtitle-user {
@@ -251,7 +266,6 @@ color: $black;
     @include tablet {
         max-width: 394px;
     }
-    
 }
 
 
@@ -264,5 +278,5 @@ line-height: 150%;
 border-radius: 30px;
 border: none;
 color: $black;
-background-color: $dark-green;
+background-color: $green;
 }
