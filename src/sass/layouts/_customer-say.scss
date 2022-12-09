@@ -4,10 +4,17 @@
   background-size: 100% 100%;
   @include section;
 
-  background-image: url(../images/vlad/bkgrгd-img-customers480@1x.jpg);
+  background-image: url(../images/vlad/bkgrгd-img-customers320@1x.jpg);
   @include retina-bgi {
-    background-image: url(../images/vlad/bkgrгd-img-customers480@2x.jpg);
+    background-image: url(../images/vlad/bkgrгd-img-customers320@2x.jpg);
   }
+
+ @include mobile {
+  background-image: url(../images/vlad/bkgrгd-img-customers480@1x.jpg);
+    @include retina-bgi {
+      background-image: url(../images/vlad/bkgrгd-img-customers480@2x.jpg)
+    }
+ }
 
   @include tablet {
     background-image: url(../images/vlad/bkgrгd-img-customers768@1x.jpg);
@@ -31,24 +38,35 @@
 }
 
 .customer-say__title {
+  
   font-size: 28px;
   line-height: calc(33 / 28);
   color: $black;
   margin-bottom: 20px;
+  padding-left: 24px;
+
   @include tablet {
     font-size: 42px;
     line-height: calc(49 / 42);
+    padding-left: 32px;
+  }
+  @include desktop {
+    padding-left: 139px;
   }
 }
 
 .customer-say__subtitle {
   font-size: 14px;
   line-height: calc(16 / 14);
-  text-align: center;
+  padding-left: 24px;
   margin-bottom: 32px;
   @include tablet {
     font-size: 16px;
     line-height: calc(19 / 16);
+    padding-left: 32px;
+  }
+  @include desktop {
+    padding-left: 139px;
   }
 }
 
@@ -78,23 +96,35 @@
     width: calc((100% - 1 * 139px) / 2);
   }
 
-  margin: 24px;
+  margin: 0 24px 24px 24px;
   @include tablet {
-    margin: 32px;
+    margin: 0 32px 32px 32px;
   }
   @include desktop {
-    margin: 139px;
+    margin: 0 139px 139px 139px;
   }
 }
 
 button.slick-prev {
-  z-index: 20;
-  left: 0px;
+    z-index: 20;
+    left: 0px;
+    @include desktop {
+        z-index: 20;
+        left: 105px;
+        top: 130px;
+    }
+  
 }
 
+
 button.slick-next {
-  z-index: 20;
-  right: 0px;
+    z-index: 20;
+    right: 0px;
+    @include desktop {
+        z-index: 20;
+        right: 105px;
+        top: 130px;
+    }
 }
 
 .reviews-list__icon {
@@ -103,6 +133,7 @@ button.slick-next {
 }
 
 .reviews-list__subtitle {
+  
   font-weight: 700;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -255,13 +286,28 @@ button.slick-next {
 }
 
 .form-subscription__input {
-  width: 100%;
-  padding: 11px 12px;
-  border: 0.854167px solid #ffe550;
-  border-radius: 30px;
-  @include tablet {
-    max-width: 394px;
-  }
+    width: 100%;
+    padding: 11px 12px;
+    border: 0.854167px solid #FFE550;
+    border-radius: 30px;
+    &::-webkit-form-subscription__input{
+        color:#505050;
+        font-size: 12px;
+        line-height: calc(18/12);
+    }
+    
+    &:valid{
+        border-color: #7EB101;
+    }
+    &:invalid{
+        border-color: #FF705D;
+    }
+    &:placeholder-shown{
+        border-color: #FFE550;
+}
+    @include tablet {
+        max-width: 394px;
+    }
 }
 
 .form-subscription__btn {
