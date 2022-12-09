@@ -46,19 +46,16 @@
     border-radius: 50%;
     right: 30px;
 }
-.hero__card {
+
+.hero__item-slic {
     @include desktop {
-        max-width: 528px;
-    }
-    
-
-}
-
-.hero__img {
-    position: absolute;
+        position: absolute;
     top: 0px;
     right:0px;
+    }
 }
+
+
 
 
 

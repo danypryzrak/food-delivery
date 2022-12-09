@@ -20,3 +20,4 @@ $('.one-time').slick({
     // instead of a settings object
   ],
 });
+
