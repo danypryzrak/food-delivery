@@ -1,17 +1,13 @@
 <section class="customer-say">
   <div class="container container-customer-say">
-    <h2 class="customer-sayclass__title">What our Customers Say</h2>
+    <h2 class="customer-say__title">What our Customers Say</h2>
     <p class="customer-say__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
     <ul class="reviews-list list">
       <li class="reviews-item">
         <div class="reviews-list__wrapper-comment">
-          <svg class="reviews-list__icon">
-            <use
-              href="./images/vlad/sprite-defs.svg#stars-customer-say"
-              width="101"
-              height="16"
-            ></use>
+          <svg class="reviews-list__icon" width="101" height="16">
+            <use href="./images/vlad/sprite-defs.svg#stars-customer-say"></use>
           </svg>
           <p class="reviews-list__subtitle">
             “The Best app I have used to order food in a while, so many options to choose from too,
@@ -19,34 +15,22 @@
           </p>
         </div>
         <div class="reviews-list__wrapper-user">
-          <picture>
-            <source
-              srcset="./images/vlad/user-man@1x.png 1x, ./images/vlad/user-man@1x.png 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="./images/vlad/user-man@1x.png 1x, ./images/vlad/user-man@1x.png 2x"
-              media="(min-width: 768px)"
-            />
-            <source srcset="./images/vlad/user-man@1x.png 1x, ./images/vlad/user-man@1x.png 2x" />
-            <img
-              class="reviews-list__user-photo"
-              src="./images/vlad/user-man@1x.png"
-              alt="user photo"
-            />
-          </picture>
-          <h3 class="reviews-list__title-user-name">Sumith Shah</h3>
-          <p class="reviews-list__subtitle-user">Some Dude</p>
+          <img
+            srcset="./images/vlad/user-man@1x.png 1x, ./images/vlad/user-man@1x.png 2x"
+            class="reviews-list__user-photo"
+            src="./images/vlad/user-man@1x.png"
+            alt="user photo"
+          />
+          <div class="reviews-list__wrapper-user-name">
+            <h3 class="reviews-list__title-user-name">Sumith Shah</h3>
+            <p class="reviews-list__subtitle-user">Some Dude</p>
+          </div>
         </div>
       </li>
       <li class="reviews-item">
         <div class="reviews-list__wrapper-comment">
-          <svg class="reviews-list__icon">
-            <use
-              href="./images/vlad/sprite-defs.svg#stars-customer-say"
-              width="101"
-              height="16"
-            ></use>
+          <svg class="reviews-list__icon" width="101" height="16">
+            <use href="./images/vlad/sprite-defs.svg#stars-customer-say"></use>
           </svg>
           <p class="reviews-list__subtitle">
             “The ease with which I can just go in and order what i want was amazing, It has been a
@@ -54,28 +38,68 @@
           </p>
         </div>
         <div class="reviews-list__wrapper-user">
-          <picture>
-            <source
-              srcset="./images/vlad/user-wuman@1x.png 1x, ./images/vlad/user-wuman@1x.png 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="./images/vlad/user-wuman@1x.png 1x, ./images/vlad/user-wuman@1x.png 2x"
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="./images/vlad/user-wuman@1x.png 1x, ./images/vlad/user-wuman@1x.png 2x"
-            />
-            <img
-              class="reviews-list__user-photo"
-              src="./images/vlad/user-wuman@1x.png"
-              alt="user photo"
-            />
-          </picture>
-          <h3 class="reviews-list__title-user-name">Sumith Shah</h3>
-          <p class="reviews-list__subtitle-user">Some Dude</p>
+          <img
+            srcset="./images/vlad/user-wuman@1x.png 1x, ./images/vlad/user-wuman@1x.png 2x"
+            class="reviews-list__user-photo"
+            src="./images/vlad/user-wuman@1x.png"
+            alt="user photo"
+          />
+          <div class="reviews-list__wrapper-user-name">
+            <h3 class="reviews-list__title-user-name">Sumith Shah</h3>
+            <p class="reviews-list__subtitle-user">Some Dude</p>
+          </div>
         </div>
       </li>
     </ul>
+  </div>
+</section>
+<!--------------------- subscribe  ------------------------>
+<section class="subscribe">
+  <div class="container container__subscribe">
+    <div class="subscribe__wrapper-img">
+      <picture>
+        <source
+          srcset="
+            ./images/vlad/subscribe_img1280@1x.png 1x,
+            ./images/vlad/subscribe_img1280@2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+
+        <source
+          srcset="
+            ./images/vlad/subscribe_img768@1x.png 1x,
+            ./images/vlad/subscribe_img768@1x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="./images/vlad/subscribe_img480@1x.png, ./images/vlad/subscribe_img480@1x.png 2x"
+        />
+
+        <img
+          class="subscribe__photo"
+          src="./images/vlad/subscribe_img480@1x.png"
+          alt="photo banana"
+        />
+      </picture>
+    </div>
+    <div class="subscribe__wrapper-content-text">
+      <h2 class="subscribe__title-main">Subscribe To Get Special Offers</h2>
+      <p class="subscribe__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique.
+      </p>
+      <form class="subscription__form">
+        <input
+          type="email"
+          name="subscribe"
+          class="form-subscription__input"
+          placeholder="Enter your emai"
+        />
+        <button class="form-subscription__btn" type="submit">Subscribe</button>
+      </form>
+    </div>
   </div>
 </section>

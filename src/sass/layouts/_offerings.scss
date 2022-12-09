@@ -1,0 +1,88 @@
+.Offerings{
+
+    position: relative;
+
+    padding-bottom: 60px;
+    background-image: url(../images/max/Rectangle-320@1x.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding-top: 381px;
+}
+
+.Offerings::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/max/Apple@1x.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    width: 280px;
+    height: 320px;
+    top: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+}
+
+.OfferingsTitle{
+    margin-bottom: 28px;
+}
+
+.OfferingsList__icon{
+    width: 26px;
+    height: 26px;
+}
+
+
+.OfferingsButtonList {
+    display: flex;
+}
+
+.OfferingsButtonList__button {
+    width: 106px;
+    height: 40px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    background-color: white;
+    cursor: pointer;
+
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+
+    &:hover{
+        background-color: #BBF330;
+        border: transparent;
+    }
+}
+
+.OfferingsSubtitle{
+    margin-bottom: 28px;
+}
+
+.OfferingsList__title{
+    margin-bottom: 16px ;
+}
+
+.OfferingsList{
+    margin-bottom: 28px;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+    }
+}
+
+.OfferingsList__item{
+    @media screen and(min-width:768px) {
+            display: block;
+            width: 252px;
+            gap: 116px;
+        }
+}
+
+.test{
+    background-color: transparent;
+    border: transparent;
+}

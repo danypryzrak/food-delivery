@@ -1,0 +1,127 @@
+.Hero{
+   
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.HeroTitle{
+    margin-bottom: 28px;
+
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    
+    color:#2C2C2C;
+}
+
+.HeroSubtitle{
+    margin-bottom: 28px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    
+    color:#2C2C2C;
+}
+
+.HeroButton{
+    width: 98px;
+    height: 32px;
+
+    background-color: #BBF330;
+    border-radius: 30px;
+    border: transparent;
+    cursor: pointer;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+
+    color: #2C2C2C;
+    
+    &:hover{
+        background-color: #FFE450 ;
+    }
+}
+
+.Offerings {
+    
+    padding-bottom: 60px;
+}
+
+.OfferingsTitle {
+    margin-bottom: 28px;
+}
+
+.OfferingsList__icon {
+    width: 26px;
+    height: 26px;
+}
+
+
+.OfferingsButtonList {
+    display: flex;
+}
+
+.OfferingsButtonList__button {
+    width: 106px;
+    height: 40px;
+
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    background-color: white;
+    cursor: pointer;
+
+    border: 2px solid #7EB101;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: #BBF330;
+        border: transparent;
+    }
+}
+
+.OfferingsSubtitle {
+    margin-bottom: 28px;
+}
+
+.OfferingsList__title {
+    margin-bottom: 16px;
+}
+
+.OfferingsList {
+    margin-bottom: 28px;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+    }
+}
+
+.OfferingsList__item {
+    margin-top: 28px;
+
+    @media screen and(min-width:768px) {
+        display: block;
+        margin-right: 67px;
+        width: 252px;
+    }
+}
+
+.test {
+    background-color: transparent;
+    border: transparent;
+}
+
+.OfferingsList__bcg {
+    margin-top: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+    background-color: white;
+}
