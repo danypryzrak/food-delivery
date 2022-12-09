@@ -1,73 +1,112 @@
-.Hero{
+.hero{
+    @include desktop{
+        margin-bottom: -161px;
+    }
+
+    
+}
+
+.container {
     padding-top: 60px;
     padding-bottom: 50px;
 
     @include desktop{
         padding-top: 14px;
-        padding-bottom: -175px;
+        padding-bottom: 0px;
     }
-
-    
 }
 
-.ContainerHero{
+
+.container-hero{
     position: relative;
    
-    @media screen and(min-width:1280px) {
-        height: 608px;
+    @include desktop {
+        min-height: 608px;
+        display: flex;
         }
 }
 
-.ContainerHero::after{
+.hero__wrapper-text-content {
 
+    @include desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+   
+}
+
+.hero__border {
     position: absolute;
-    @media screen and(min-width:768px) {
-        
-        content: "";
-        background-image: url(../images/max/Ellipse-tablet@1x.png);
-        height: 320px;
-        width: 320px;
-        
-        top: 200px;
-        right: 40px;
+    padding-bottom: 528px;
+    padding-right: 528px;
+    max-width: 580px;
+    max-height: 580px;
+    border: 26px solid $main-yellow;
+    border-radius: 50%;
+    right: 30px;
+}
+.hero__card {
+    @include desktop {
+        max-width: 528px;
     }
-
-    @media screen and(min-width:1200px) {
-        background-image: url(../images/max/Ellipse-decstop@1x.png);
-        width: 580px;
-        height: 580px;
-        right: 30px;
-        top: 14px;
-    }
+    
 
 }
 
-.ContainerHero::before{
+.hero__img {
     position: absolute;
-    @media screen and(min-width:1200px) {
-            content: " ";
-            background-image: url(../images/max/Plate-decstop@1x.png);
-            width: 528px;
-            height: 528px;
-            top: 40px;
-            right: 56px;
-            z-index: 10;
-            }
-        }
-    
- 
+    top: 0px;
+    right:0px;
+}
 
-.HeroTitle{
-    margin-bottom: 28px;
 
-    
+
+// .container-hero::after{
+
+//     position: absolute;
+//     @media screen and(min-width:768px) {
+        
+//         content: "";
+//         background-image: url(../images/max/Ellipse-tablet@1x.png);
+//         height: 320px;
+//         width: 320px;
+        
+//         top: 200px;
+//         right: 40px;
+//     }
+
+//     @media screen and(min-width:1200px) {
+//         background-image: url(../images/max/Ellipse-decstop@1x.png);
+//         width: 580px;
+//         height: 580px;
+//         right: 30px;
+//         top: 14px;
+//     }
+
+// }
+
+// .container-hero::before{
+//     position: absolute;
+//     @media screen and(min-width:1200px) {
+//             content: " ";
+//             background-image: url(../images/max/Plate-decstop@1x.png);
+//             width: 528px;
+//             height: 528px;
+//             top: 40px;
+//             right: 56px;
+//             z-index: 10;
+//             }
+//         }
+
+.hero__title{
     font-weight: 700;
     font-size: 28px;
     line-height: 33px;
     
-    color: #2C2C2C;
+    color: $black;
 
-    @media screen and(min-width:768px) {
+    @include tablet {
         width: 537px;
         
         font-weight: 700;
@@ -75,49 +114,54 @@
         line-height: 120%;
     }
 
-    @media screen and(min-width:1280px) {
+    @include desktop {
         width: 502px;
-    
         font-size: 48px;
+        line-height: 120%;
+        margin-bottom: 28px;
         }
     
 }
 
-.HeroSubtitle{
-    margin-bottom: 28px;
-
+.hero__subtitle{
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     
-    color:#2C2C2C;
+    color:$black;
 
-    @media screen and(min-width:768px) {
+    @include tablet{
         width: 336px;
         }
 
-    @media screen and(min-width:1280px){
-        width: 502px;
+    @include desktop{
+        max-width: 502px;
+        margin-bottom: 28px;
+
+        font-size: 16px;
+        line-height: 150%;
     }
 }
 
-.HeroButton{
+.hero__button{
     width: 98px;
     height: 32px;
 
-    background-color: #BBF330;
+    background-color:$green;
     border-radius: 30px;
     border: transparent;
     cursor: pointer;
-
     font-weight: 500;
     font-size: 13px;
     line-height: 150%;
+    outline: none;
 
-    color: #2C2C2C;
+    color: $black;
     
-    &:hover{
-        background-color: #FFE450 ;
+    &:hover,
+    &:focus,
+    &:active{
+        background-color: #FFE450;
     }
 }
 

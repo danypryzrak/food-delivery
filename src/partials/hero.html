@@ -1,13 +1,61 @@
-<section class="Hero">
-  <div class="container ContainerHero">
-    <h1 class="HeroTitle">Enjoy Your Favorite Food From Anywhere</h1>
-    <p class="HeroSubtitle">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-      varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-      ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-    </p>
+<section class="hero">
+  <div class="container container-hero">
+    <div class="hero__wrapper-text-content">
+      <h1 class="hero__title">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero__subtitle">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+        commodo diam libero vitae erat.
+      </p>
+      <button class="hero__button" type="button" data-modal-open>Order Now</button>
+    </div>
+    <div class="hero__border hero__wrapper-card">
+      <div class="hero__card">
+        <picture>
+          <source
+            srcset="./images/max/plate-one1280@1x.png 1x, ./images/max/plate-one1280@2x.png 2x"
+            media="(min-width: 1200px)"
+          />
 
-    <button class="HeroButton" type="button" data-modal-open>Order Now</button>
+          <source
+            srcset="./images/max/plate-one768@1x.png 1x, ./images/max/plate-one768@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+
+          <img class="hero__img" src="./images/max/plate-one768@1x.png" alt="plate of food" />
+        </picture>
+      </div>
+      <div class="hero__card">
+        <picture>
+          <source
+            srcset="./images/max/plate-two1280@1x.png 1x, ./images/max/plate-two1280@2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="./images/max/plate-two768@1x.png 1x, ./images/max/plate-two768@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+
+          <img class="hero__img" src="./images/max/plate-two768@1x.png" alt="plate of food" />
+        </picture>
+      </div>
+      <div class="hero__card">
+        <picture>
+          <source
+            srcset="./images/max/plate-three1280@1x.png 1x, ./images/max/plate-three1280@2x.png 2x"
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="./images/max/plate-three768@1x.png 1x, ./images/max/plate-three768@2x.png 2x"
+            media="(min-width: 768px)"
+          />
+
+          <img class="hero__img" src="./images/max/plate-three768@1x.png" alt="plate of food" />
+        </picture>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -16,9 +64,9 @@
     <div class="test2">
       <h2 class="OfferingsTitle">What’s Special About Our Offerings</h2>
       <p class="OfferingsSubtitle">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+        elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+        commodo diam libero vitae erat.
       </p>
       <ul class="OfferingsList">
         <li class="OfferingsList__item">
@@ -30,8 +78,8 @@
 
           <h3 class="OfferingsList__title">Fasest Delivery</h3>
           <p class="OfferingsList__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+            eros.
           </p>
         </li>
         <li class="OfferingsList__item">
@@ -42,19 +90,15 @@
           </span>
           <h3 class="OfferingsList__title">Easy to order</h3>
           <p class="OfferingsList__subtitle">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+            eros.
           </p>
         </li>
       </ul>
 
       <ul class="OfferingsButtonList">
         <li class="OfferingsButtonList__item">
-          <button
-            class="OfferingsButtonList__button"
-            type="button"
-            data-modal-open
-          >
+          <button class="OfferingsButtonList__button" type="button" data-modal-open>
             Order Now
           </button>
         </li>
