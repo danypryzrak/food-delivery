@@ -15,10 +15,17 @@
             </ul>
 
 
-            <form class="footer-subscribe">
-                <h2 class="footer-subscribe__title">Subscribe</h2>
-                <label class="footer-subscribe__label">
-                    <input class="footer-subscribe__input" type="email" required placeholder="Enter your email">
+            <form class="subscribe">
+
+                <label class="subscribe__label">
+                    <h2 class="subscribe__title">Subscribe</h2>
+                    <input class="subscribe__input" type="email" required placeholder="Enter your email">
+                    <p class="subscribe__error">
+                        <svg class="error-icon" width="12" height="12">
+                            <use href="./images/serhii/icons.svg#error"></use>
+                        </svg>
+                        Not a valid email address (example@email.com)
+                    </p>
                 </label>
                 <button class="footer-subscribe__btn" type="submit">Subscribe</button>
                 <p class="footer-subscribe__text">By subscribing you agree to with our <a class="subscribe__privacy"
