@@ -71,7 +71,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     @include tablet {
         display: none;
     }
@@ -86,13 +85,14 @@
     fill: #7EB101;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .burger-btn &:hover,
-            &:focus {
+            &:focus,
+            &:active {
             fill: #FFE450;
         }
 }
 .nav-button {
     display: none;
-
+    cursor: pointer;
     @include tablet {
     display: flex;
     background-color: #BBF330;
@@ -106,9 +106,9 @@
     font-size: 13px;
     line-height: calc(20/13);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
-    &:focus {
+    &:focus,
+    &:active {
             background-color: #FFE450;
         }
 
@@ -134,7 +134,7 @@
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
     &.is-open{
     opacity: 1;
         visibility: visible;
