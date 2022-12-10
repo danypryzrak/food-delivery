@@ -5,43 +5,44 @@
         <use href="./images/max/svg/symbol-defs.svg#modal-close-icon"></use>
       </svg>
     </button>
+
+    <h2 class="ModalForm__title">Order Form</h2>
     <form class="ModalForm">
-      <p class="ModalForm__title">Order Form</p>
 
-      <label class="ModalForm__subtitle" for="user_name">Name</label>
-      <input
-        class="ModalForm__inpyt"
-        name="user_name"
-        required
-        placeholder="Your name"
-        pattern="^[a-zA-Zа-яА-ЯїЇіІ]+$"
-        title="Тільки літери А-Я або A-Z"
-        type="text"
-        id="user_name"
-      />
-      <p class="error">dvsdvsdvdsv</p>
+      <label class="ModalForm__label" for="user_name"><span class="modalform-label__name">Name</span>
+        <input class="ModalForm__input" name="user_name" required placeholder="Your name" minlength="3" maxlength="25"
+          pattern="^[a-zA-Zа-яА-ЯїЇіІ]+$" title="Тільки літери А-Я або A-Z" type="text" id="user_name" />
+        <p class="subscribe__error">
+          <svg class="error-icon" width="12" height="12">
+            <use href="./images/serhii/icons.svg#error"></use>
+          </svg>
+          The name must be between 3 and 25 characters
+        </p>
+      </label>
 
-      <label class="ModalForm__subtitle" for="user_tell">Phone number</label>
-      <input
-        class="ModalForm__inpyt"
-        name="user_tell"
-        required
-        title="Тільки цифри"
-        pattern="^[0-9]+$"
-        placeholder="+38(0_ _) _ _ _   _ _   _ _"
-        type="tel"
-        id="user_tell"
-      />
+      <label class="ModalForm__label" for="user_tell"><span class="modalform-label__name">Phone-Number</span>
+        <input class="ModalForm__input" name="user_tell" required title="Тільки цифри" pattern="^[0-9]+$"
+          placeholder="+38(0_ _) _ _ _   _ _   _ _" type="tel" id="user_tell" />
 
-      <label class="ModalForm__subtitle" for="user_email">E-mail</label>
-      <input
-        class="ModalForm__inpyt"
-        name="user_email"
-        required
-        placeholder="example@gmail.com"
-        type="email"
-        id="user_email"
-      />
+        <p class="subscribe__error">
+          <svg class="error-icon" width="12" height="12">
+            <use href="./images/serhii/icons.svg#error"></use>
+          </svg>
+          This phone must be in the format 099 000 00 00
+        </p>
+      </label>
+
+      <label class="ModalForm__label" for="user_email"><span class="modalform-label__name">E-Mail</span>
+        <input class="ModalForm__input" name="user_email" required placeholder="example@gmail.com" type="email"
+          id="user_email" />
+
+        <p class="subscribe__error">
+          <svg class="error-icon" width="12" height="12">
+            <use href="./images/serhii/icons.svg#error"></use>
+          </svg>
+          Not a valid email address (example@email.com)
+        </p>
+      </label>
       <button class="ModalForm__button" type="submit">Send</button>
     </form>
   </div>
