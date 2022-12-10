@@ -101,10 +101,15 @@
     border: 2px solid #7EB101;
     border-radius: 30px;
 
+    transition-duration: 250ms;
+        transition-timing-function: linear;
+        transition-property: background-color;
+
     &:hover{
         background-color: #BBF330;
         border: transparent;
-    }
+    }   
+    
 }
 
 .OfferingsSubtitle{

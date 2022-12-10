@@ -119,6 +119,10 @@
     &:hover{
         background-color: #FFE450 ;
     }
+
+        transition-duration: 250ms;
+        transition-timing-function: linear;
+        transition-property: background-color;
 }
 
 

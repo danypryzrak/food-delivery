@@ -46,13 +46,15 @@
     border: none;
    
     cursor: pointer;
-n
+
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-property: fill;
+
     &:hover,
     &:focus{
-        background-color: #7EB101;
         fill: #BBF330;
     }
-
 }
 
 .ModalForm__title{
@@ -75,6 +77,10 @@ n
 
     width: 106px;
     height: 40px;
+
+    transition-duration: 250ms;
+    transition-timing-function: linear;
+    transition-property: background-color;
 
     &:hover,
     &:focus{
