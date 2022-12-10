@@ -1,0 +1,2 @@
+var offset=0,sliderLine=document.querySelector(".hero__card");document.querySelector(".hero__slider-next").addEventListener("click",(function(){(offset+=528)>1056&&(offset=0),sliderLine.style.left=-offset+"px"})),document.querySelector(".hero__slider-prev").addEventListener("click",(function(){(offset-=528)<0&&(offset=1056),sliderLine.style.left=-offset+"px"}));
+//# sourceMappingURL=index.30eaf949.js.map
