@@ -5,7 +5,7 @@ $('.one-time').slick({
   infinite: true,
   speed: 300,
   slidesToScroll: 1,
-  slidesToShow: 2,
+  slidesToShow: 1,
   adaptiveHeight: true,
 
   responsive: [
@@ -20,4 +20,3 @@ $('.one-time').slick({
     // instead of a settings object
   ],
 });
-
