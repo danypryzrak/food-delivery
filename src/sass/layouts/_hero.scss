@@ -80,26 +80,41 @@
 }
 
 .hero__card {
+    
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     transition: all ease 1s;
-    
 
+}
+
+.hero__card-two {
+    @include tablet {
+        position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: all ease 1s;
+    }
 }
 
 .hero__picture {
     @include tablet {
         width: 292px;
         height: 292px;
+        margin-right: 236px;
     }
+
     @include desktop {
+     
+        margin: 0;
+    
         width: 528px;
     height: 528px;
     }
-    
 }
+
 
 .hero__title{
     font-size: 28px;
@@ -210,6 +225,7 @@ line-height: 150%;
 
 .hero__slider-next {
     display: none;
+    z-index: 11;
     @include tablet {
         display: block;
         position: absolute;
@@ -227,7 +243,7 @@ line-height: 150%;
 
 .hero__slider-prev {
     display: none;
-    
+    z-index: 11;
     @include tablet {
         display: block;
         position: absolute;
