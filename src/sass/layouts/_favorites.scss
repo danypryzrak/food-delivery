@@ -63,15 +63,14 @@
   &:active,
   &:hover,
   &:focus {
-      border-color: $dark-green;
-    }
+    border-color: $dark-green;
+  }
 
   @include tablet {
     padding: 24px 24px;
   }
   @include desktop {
     padding: 30px 30px;
-  
   }
 }
 

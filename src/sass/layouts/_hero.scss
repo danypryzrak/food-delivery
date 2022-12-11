@@ -222,6 +222,10 @@ line-height: 150%;
     @include tablet {
         display: block;
     }
+
+        transition-duration: 250ms;
+        transition-timing-function: linear;
+        transition-property: background-color;
 }
 
 .hero__slider-next {
