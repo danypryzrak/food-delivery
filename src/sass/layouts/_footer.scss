@@ -1,28 +1,35 @@
 .footer{
-    background-position: center;
-    background-size: 100% 100%;
+    background-position: 0 132px, right top, 50% 100%;
+    background-size: 110px 116px, 104px 259px, 253px 66px;
     background-repeat: no-repeat;
-    background-image: url(../images/serhii/footer-bck-480@1x.png);
+    background-image: url(../images/serhii/apple-mobile@1x.png), url(../images/serhii/citrus_mobile@1x.png), url(../images/serhii/banana-mobile@1x.png);
     padding: 60px 0;
 
 @include retina-bgi{
-    background-image: url(../images/serhii/footer-bck-480@2x.png);
+    background-image:  url(../images/serhii/apple-mobile@2x.png), url(../images/serhii/citrus_mobile@2x.png), url(../images/serhii/banana-mobile@2x.png);
+    background-size: 110px 116px, 104px 259px, 253px 66px;
 }
 
 @include tablet{
     padding: 100px 0;
-    background-image: url(../images/serhii/footer-bck-720@1x.png);
+    background-image: url(../images/serhii/1bk-tablet@1x.png),url(../images/serhii/2bk-tablet@1x.png),url(../images/serhii/3bk-tablet@1x.png),url(../images/serhii/4bk-tablet@1x.png),url(../images/serhii/5bk-tablet@1x.png),url(../images/serhii/6bk-tablet@1x.png),url(../images/serhii/7bk-tablet@1x.png);
+    background-position: 30% bottom, 80% bottom, left bottom, 43% bottom, 63% bottom, right bottom, right top;
+    background-size: 168px 92px, 171px 141px, 184px 60px, 153px 95px, 221px 82px, 170px 69px, 203px 365px;
 
     @include retina-bgi{
-        background-image: url(../images/serhii/footer-bck-720@2x.png);
+    background-image: url(../images/serhii/1bk-tablet@2x.png),url(../images/serhii/2bk-tablet@2x.png),url(../images/serhii/3bk-tablet@2x.png),url(../images/serhii/4bk-tablet@2x.png),url(../images/serhii/5bk-tablet@2x.png),url(../images/serhii/6bk-tablet@2x.png),url(../images/serhii/7bk-tablet@2x.png);
+    background-size: 168px 92px, 171px 141px, 184px 60px, 153px 95px, 221px 82px, 170px 69px, 203px 365px;
     }
 }
 
 @include desktop{
-    background-image: url(../images/serhii/footer-bck-1200@1x.png);
-    
+    background-image: url(../images/serhii/1bk-desktop@1x.png),url(../images/serhii/2bk-desktop@1x.png),url(../images/serhii/3bk-desktop@1x.png),url(../images/serhii/4bk-desktop@1x.png),url(../images/serhii/5bk-desktop@1x.png),url(../images/serhii/6bk-desktop@1x.png),url(../images/serhii/7bk-desktop@1x.png), url(../images/serhii/8bk-desktop@1x.png);
+    background-position: 15% bottom, 43% bottom, 85% bottom, left bottom, center bottom, 32% bottom, 70% bottom, right bottom;
+    background-size: 178px 98px, 526px 266px, 182px 154px, 195px 60px, 380px 126px, 163px 103px, 235px 87px, 181px 73px;
     @include retina-bgi{
-        background-image: url(../images/serhii/footer-bck-1200@2x.png);
+        background-image: url(../images/serhii/1bk-desktop@2x.png),url(../images/serhii/2bk-desktop@2x.png),url(../images/serhii/3bk-desktop@2x.png),url(../images/serhii/4bk-desktop@2x.png),url(../images/serhii/5bk-desktop@2x.png),url(../images/serhii/6bk-desktop@2x.png),url(../images/serhii/7bk-desktop@2x.png), url(../images/serhii/8bk-desktop@2x.png);
+    background-size: 178px 98px, 526px 266px, 182px 154px, 195px 60px, 380px 126px, 163px 103px, 235px 87px, 181px 73px;
+
     }
 }
 }
@@ -99,6 +106,8 @@ font-weight: 400;
 font-size: 14px;
 line-height: calc(16/14);
 
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+
 color: $black;
 &:hover,
 &:focus,
@@ -113,11 +122,14 @@ color: $black;
     display: flex;
     flex-direction: column;
     width: 400px;
+    gap: 20px;
 
 
     @include tablet{
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 12px;
+        width: 410px;
     }
     @include desktop{
     
@@ -130,12 +142,12 @@ font-size: 14px;
 line-height: calc(21/14);
 color: $black;
 
-margin-bottom: 12px;
 
 @include tablet{
 width: 100%;
     }
 }
+
 
 .footer-subscribe__input{
     border: 0.854167px solid #FFE550;
@@ -143,7 +155,8 @@ border-radius: 30px;
 height: 42px;
 width: 280px;
 padding:0 12px;
-margin-bottom: 20px;
+outline: none;
+
 
 &::-webkit-input-placeholder{
     color:#505050;
@@ -151,28 +164,46 @@ margin-bottom: 20px;
     line-height: calc(18/12);
 }
 
-&:valid{
-    border-color: #7EB101;
-}
-&:invalid{
-    border-color: #FF705D;
-}
-&:placeholder-shown{
-    border-color: #FFE550;
-    
+&:not(:placeholder-shown):required:valid {
+border-color: #7EB101;
 }
 
-@include tablet{
-margin-bottom: 12px;
-    }
+&:not(:placeholder-shown):required:invalid {
+border-color: #FF705D;
+}
+
+&:not(:placeholder-shown):required:invalid+.subscribe__error {
+display: flex;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+&:placeholder-shown{
+    border-color: #FFE550;
+}
+
+
+}
+
+.subscribe__error{
+display: inline;
+    font-weight: 400;
+font-size: 10px;
+line-height: calc(15/10);
+color: #FF705D;
+display: none;
+
+}
+
+.error-icon{
+    fill: #FF705D;
+    
 }
 
 .footer-subscribe__btn{
 width: 103px;
 height: 42px;
 
-align-self: flex-end;
-margin-bottom: 20px;
 
 background: #FFFFFF;
 border: 0.854167px solid #7EB101;
@@ -182,17 +213,14 @@ font-weight: 500;
 font-size: 13px;
 line-height: calc(20/13);
 
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 color: $black;
 
 &:hover,
 &:focus,
 &:active{
     border-color: #FFE450;
-}
-
-@include tablet{
-margin-left: 13px;
-margin-bottom: 12px;
 }
 }
 

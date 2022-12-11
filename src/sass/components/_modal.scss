@@ -6,6 +6,7 @@
     padding-right: 20px;
     padding-top: 32px;
     padding-bottom: 32px;
+    
 
     top: 50%;
     left: 50%;
@@ -61,13 +62,13 @@ n
     font-size: 24px;
     line-height: 120%;    
     color: #2C2C2C;
+    margin-bottom: 20px;
 }
 
 .ModalForm__button{
-    margin-top: 32px;
+    margin-top: 8px;
     margin-left: auto;
     margin-right: auto;
-
 
     border: 2px solid #7EB101;
     border-radius: 30px;
@@ -76,8 +77,11 @@ n
     width: 106px;
     height: 40px;
 
+    background-color: #ffffff;
+
     &:hover,
-    &:focus{
+    &:focus,
+    &:active{
         background-color: #BBF330;
     }
 }
@@ -85,25 +89,64 @@ n
 .ModalForm{
     display: flex;
     flex-direction: column;
+    gap: 24px;
 }
 
-.ModalForm__inpyt{
+.modalform-label__name{
+    font-weight: 500;
+font-size: 16px;
+line-height: calc(22/16);
+padding-left: 12px;
+
+
+
+
+/* Black */
+
+color: $black;
+}
+
+.ModalForm__input{
     height: 48px;
+    width: 100%;
 
     padding-left: 12px;
     padding-right: 12px;
     
-
     border: 1px solid #7EB101;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-
+    outline: none;
 
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
 
+    &::-webkit-input-placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20/16);
 
+    color: #C4C4C4;
+    }
+
+&:not(:placeholder-shown):required:valid {
+border-color: #7EB101;
+}
+
+&:not(:placeholder-shown):required:invalid {
+border-color: #FF705D;
+}
+
+&:not(:placeholder-shown):required:invalid+.subscribe__error {
+display: flex;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+&:placeholder-shown{
+    border-color: #FFE550;
+}
 }
 
 .ModalForm__subtitle{
@@ -120,21 +163,4 @@ n
 }
 
 
-.error{
-    position: absolute;
-    font-size: 10px;
-    width: 330px;
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-}
 
-
-
-.ModalForm__inpyt:not(:focus-within):not(:placeholder-shown):invalid + .error{
-    width: 100%;
-    background-color: red;
-    height: 15px;
-    opacity: 1;
-    visibility: visible;
-}
