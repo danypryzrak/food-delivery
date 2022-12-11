@@ -27,3 +27,5 @@
   });
 })();
 import './js/simplelightbox';
+import './js/anchor-scroll';
+import './js/header-scroll';
