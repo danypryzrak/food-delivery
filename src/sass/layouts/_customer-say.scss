@@ -289,7 +289,8 @@ button.slick-next {
   width: 278px;
   padding: 0 12px;
   outline: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::-webkit-input-placeholder {
     color: #505050;
@@ -297,8 +298,8 @@ button.slick-next {
     line-height: calc(18 / 12);
   }
 
-  &:not(:placeholder-shown):required:valid {
-    border-color: #7eb101;
+&:not(:placeholder-shown):required:valid {
+  border-color: #7EB101;
   }
 
   &:not(:placeholder-shown):required:invalid {
